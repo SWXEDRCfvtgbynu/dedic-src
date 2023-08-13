@@ -4,7 +4,7 @@ net config server /srvcomment:"Windows Server 2019" > out.txt 2>&1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F > out.txt 2>&1
 net user dlbb DISPVPS /add >nul
 net localgroup administrators dlbb /add >nul
-net user administrator /active:yes >nul
+net user dlbb /active:yes >nul
 net user installer /delete
 diskperf -Y >nul
 sc config Audiosrv start= auto >nul

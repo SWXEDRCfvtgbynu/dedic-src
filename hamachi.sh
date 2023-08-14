@@ -1,1 +1,0 @@
-curl https://raw.githubusercontent.com/SWXEDRCfvtgbynu/dedic-src/main/hamachi.deb -o hamachi.deb && sudo dpkg --install hamachi.deb && hamachi login && hamachi join $1 $1

@@ -1,4 +1,4 @@
-curl https://raw.githubusercontent.com/SWXEDRCfvtgbynu/dedic-src/main/hamachi.deb & pid=$!
+curl https://raw.githubusercontent.com/SWXEDRCfvtgbynu/dedic-src/main/hamachi.deb -o hamachi.deb & pid=$!
 wait pid
 sudo dpkg --install hamachi & pid=$!
 wait pid
